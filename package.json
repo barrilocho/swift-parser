@@ -7,18 +7,18 @@
     "test": "tests"
   },
   "dependencies": {
-    "bunyan": "~1.2.1",
-    "lugg": "~1.0.0",
+    "bunyan": "~1.8.12",
+    "lugg": "~3.0.0",
     "mocha": "^5.2.0",
-    "xregexp": "~2.0.0"
+    "xregexp": "^2.0.0"
   },
   "devDependencies": {
-    "assert": "~1.1.1",
+    "assert": "~1.4.1",
     "grunt": "^1.0.3",
     "grunt-contrib-coffee": "^2.0.0",
     "grunt-mocha-test": "^0.13.3",
-    "grunt-newer": "^0.7.0",
-    "grunt-peg": "^1.4.0"
+    "grunt-newer": "^1.3.0",
+    "grunt-peg": "^2.0.1"
   },
   "scripts": {
     "test": "grunt test"
