@@ -18,7 +18,8 @@ module.exports = function(grunt) {
 			grammars: {
 			  expand: true,
 			  src: ["**/*.peg", "!node_modules/**"],
-			  ext: ".js",
+              ext: ".js",
+              dest: 'dist'
 			}
         },
         coffee: {
@@ -29,7 +30,8 @@ module.exports = function(grunt) {
                 },
                 expand: true,
                 src: ["**/*.coffee", "!node_modules/**"],
-                ext: ".js"
+                ext: ".js",
+                dest: "dist"
             }
         }
     });
