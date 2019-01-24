@@ -1,5 +1,5 @@
 var assert = require("assert");
-var block2Parser = require('../block2Parser');
+var block2Parser = require('../dist/block2Parser');
 
 describe('Block2 Parser', function(){
     it('parses the correct ouput block', function(){
