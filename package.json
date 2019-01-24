@@ -7,9 +7,9 @@
     "test": "tests"
   },
   "dependencies": {
-    "xregexp": "~2.0.0",
     "bunyan": "~1.2.1",
-    "lugg": "~1.0.0"
+    "lugg": "~1.0.0",
+    "xregexp": "~2.0.0"
   },
   "devDependencies": {
     "assert": "~1.1.1",
@@ -17,7 +17,7 @@
     "grunt-mocha-test": "~0.11.0",
     "grunt-newer": "^0.7.0",
     "grunt-peg": "^1.4.0",
-    "grunt-contrib-coffee": "git://github.com/yjo/grunt-contrib-coffee"
+    "grunt-contrib-coffee": "^2.0.0"
   },
   "scripts": {
     "test": "grunt test"
