@@ -1,5 +1,5 @@
 var assert = require('assert');
-var ns = require('../dist/FieldRegexpFactory');
+var ns = require('../FieldRegexpFactory');
 var FieldRegexpFactory = ns.FieldRegexpFactory;
 
 describe('FieldRegexpFactory', function(){
