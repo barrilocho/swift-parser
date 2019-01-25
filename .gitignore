@@ -26,3 +26,14 @@ node_modules
 
 .idea
 dist
+swiftParser.js.map
+swiftParser.js
+mtGrammar.js
+finGrammar.js
+block2Parser.js.map
+block2Parser.js
+block1Parser.js.map
+block1Parser.js
+FieldRegexpFactory.js.map
+FieldRegexpFactory.js
+FieldPeg.js

@@ -345,11 +345,11 @@
   },
   "69A": {
     "pattern": ":4!c//8!n/8!n",
-    "fieldNames": "(Qualifier)(Date)(Date)"
+    "fieldNames": "(Qualifier)(DateFrom)(DateTo)"
   },
   "69B": {
     "pattern": ":4!c//8!n6!n/8!n6!n",
-    "fieldNames": "(Qualifier)(Date)(Time)(Date)(Time)"
+    "fieldNames": "(Qualifier)(DateFrom)(TimeFrom)(DateTo)(TimeTo)"
   },
   "69C": {
     "pattern": ":4!c//8!n/4!c",
@@ -380,7 +380,7 @@
     "fieldNames": "(Qualifier)(Narrative)"
   },
   "70E": {
-    "pattern": ":4!c//10*35x",
+    "pattern": ":4!c//10*150x",
     "fieldNames": "(Qualifier)(Narrative)"
   },
   "70F": {
