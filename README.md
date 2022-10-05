@@ -15,12 +15,17 @@ JavaScript parser of [ISO 15022](http://www.iso15022.org/) messages used for mes
 ## Installation
 Installation from npm:
 ```Shell
-$ npm install --save swift-parser
+$ npm install --save swift-to-json
+```
+
+Installation from yarn:
+```Shell
+$ yarn add swift-to-json
 ```
 
 Installation from the git repository:
 ```Shell
-$ npm install --save git://github.com/pstodulka/swift-parser.git
+$ npm install --save git://github.com/barrilocho/swift-parser.git
 $ cd node_modules
 $ cd swift-parser
 $ npm install
@@ -29,13 +34,14 @@ $ grunt
 
 ## Usage
 ```JavaScript
-var SwiftParser = require('swift-parser').SwiftParser;
+import * as SwiftParser from 'swift-parser';
 
-var parser = new SwiftParser();
-parser.parse(swift, function(err, ast) {
-    ...
-}
+const swiftToJson = new SwiftParser.SwiftParser();
+
+const ast = await swiftToJson.parse(swiftFileContent);
+
 ```
+
 
 It is possible to run the `SWIFT parser` from the command line. The result is written to the standard output:
 
@@ -48,7 +54,7 @@ $ node swiftParser file.txt
 ### new SwiftParser([metadata])
 Initializes a new instance of `SWIFT Parser` using given metadata. If `metadata` is omitted, the default metadata is used.
 
-### swiftParser.parse(swift, callback)
+### swiftParser.parse(swift)
 Parses the `swift` message. The line breaks of `swift` must be in Windows format (`\r\n`).
 
 ## Example
