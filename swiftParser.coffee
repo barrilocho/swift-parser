@@ -23,12 +23,12 @@ class SwiftParser
       field.ast = parsedField
     return ast
 
-  parse: (swiftMessage, callback) ->
+  parse: async (swiftMessage) ->
     try
-      ast = @process(swiftMessage)
-      callback(null, ast)
+      ast = await @process(swiftMessage)
+      return ast
     catch e
-      callback(e, null)
+      return  e
 
 module.exports.SwiftParser = SwiftParser
 

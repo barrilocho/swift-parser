@@ -1,6 +1,6 @@
 {
-  "name": "swift-parser",
-  "version": "0.1.2",
+  "name": "swift-to-json",
+  "version": "0.2.0",
   "description": "Metadata driven parser of ISO 15022 messages.",
   "main": "./dist/swiftParser.js",
   "directories": {
@@ -21,11 +21,12 @@
     "grunt-peg": "^2.0.1"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "build": "grunt build"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/pstodulka/swift-parser.git"
+    "url": "https://github.com/barrilocho/swift-parser.git"
   },
   "keywords": [
     "swift",
