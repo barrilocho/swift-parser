@@ -34,9 +34,9 @@ $ grunt
 
 ## Usage
 ```JavaScript
-import * as SwiftParser from 'swift-parser';
+import * as SwiftToJson from 'swift-to-json';
 
-const swiftToJson = new SwiftParser.SwiftParser();
+const swiftToJson = new SwiftToJson.SwiftParser();
 
 const ast = await swiftToJson.parse(swiftFileContent);
 
