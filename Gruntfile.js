@@ -1,42 +1,42 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
+  grunt.loadNpmTasks('grunt-mocha-test');
+  grunt.loadNpmTasks('grunt-peg');
+  grunt.loadNpmTasks('grunt-newer');
+  grunt.loadNpmTasks('grunt-contrib-coffee');
 
-    grunt.loadNpmTasks('grunt-mocha-test');
-	grunt.loadNpmTasks('grunt-peg');
-	grunt.loadNpmTasks('grunt-newer'); 
-	grunt.loadNpmTasks('grunt-contrib-coffee');
-
-    grunt.initConfig({
-        mochaTest: {
-            test: {
-                options: {
-                    reporter: 'spec'
-                },
-                src: ['tests/**/*.js']
-            }
+  grunt.initConfig({
+    mochaTest: {
+      test: {
+        options: {
+          reporter: 'spec',
         },
-		peg: {
-			grammars: {
-			  expand: true,
-			  src: ["**/*.peg", "!node_modules/**"],
-              ext: ".js"
-			}
+        src: ['tests/**/*.js'],
+      },
+    },
+    peg: {
+      grammars: {
+        expand: true,
+        src: ['**/*.peg', '!node_modules/**'],
+        ext: '.js',
+        dest: 'dist',
+      },
+    },
+    coffee: {
+      transform: {
+        options: {
+          sourceMap: true,
+          mapExt: '.map', //this can only the forked version of grunt-contrib-coffee
         },
-        coffee: {
-            transform: {
-                options: {
-                    sourceMap: true,
-                    mapExt: ".map" //this can only the forked version of grunt-contrib-coffee
-                },
-                expand: true,
-                src: ["**/*.coffee", "!node_modules/**"],
-                ext: ".js"
-            }
-        }
-    });
+        expand: true,
+        src: ['**/*.coffee', '!node_modules/**'],
+        ext: '.js',
+        dest: 'dist',
+      },
+    },
+  });
 
-    grunt.registerTask('test', 'mochaTest');
-    grunt.registerTask('build', ['newer:peg', 'newer:coffee']);
+  grunt.registerTask('test', 'mochaTest');
+  grunt.registerTask('build', ['newer:peg', 'newer:coffee']);
 
-    grunt.registerTask('default', 'build');
-
+  grunt.registerTask('default', 'build');
 };
