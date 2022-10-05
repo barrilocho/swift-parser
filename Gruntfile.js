@@ -18,7 +18,6 @@ module.exports = function (grunt) {
         expand: true,
         src: ['**/*.peg', '!node_modules/**'],
         ext: '.js',
-        dest: 'dist',
       },
     },
     coffee: {
@@ -30,7 +29,6 @@ module.exports = function (grunt) {
         expand: true,
         src: ['**/*.coffee', '!node_modules/**'],
         ext: '.js',
-        dest: 'dist',
       },
     },
   });

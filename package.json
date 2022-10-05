@@ -2,7 +2,7 @@
   "name": "swift-to-json",
   "version": "0.2.2",
   "description": "Metadata driven parser of ISO 15022 messages.",
-  "main": "./dist/swiftParser.js",
+  "main": "./swiftParser.js",
   "directories": {
     "test": "tests"
   },
